@@ -27,11 +27,10 @@
     position: relative;
     animation: fadeIn 2s ease-in-out;
 
-    /* Key Background Fixes */
-    background-size: cover; /* Ensures the image scales proportionally */
+    /* Ensures the image fully fits the container */
+    background-size: 100% 100%; /* Stretches the image to fit */
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* Keeps the image fixed during scroll */
 }
 
 /* Adjust for smaller screens */
@@ -40,7 +39,6 @@
         width: 95%;
         padding: 20px;
         margin-top: 30px;
-        background-size: cover; /* Ensures the image scales properly */
     }
 }
 
@@ -51,9 +49,9 @@
         padding: 15px;
         margin-top: 20px;
         border-width: 5px;
-        background-size: cover; /* Keeps the background visually appealing */
     }
 }
+
 
 
 
