@@ -14,7 +14,7 @@
 			padding: 0;
 }
 
-        .container {
+.container {
     max-width: 90%;
     width: 600px;
     margin: auto;
@@ -26,13 +26,12 @@
     border: 8px solid #a586a6;
     position: relative;
     animation: fadeIn 2s ease-in-out;
-    background-size: cover; 
+    
+    /* Improved background handling */
+    background-size: contain; /* Ensures the whole image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
     background-blend-mode: lighten;
-
-    /* Ensuring responsiveness */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Adjust for smaller screens */
@@ -41,6 +40,7 @@
         width: 90%;
         padding: 20px;
         margin-top: 30px;
+        background-size: cover; /* Adjust to cover on smaller screens */
     }
 }
 
@@ -51,8 +51,10 @@
         padding: 15px;
         margin-top: 20px;
         border-width: 5px;
+        background-size: contain; /* Ensures the whole image remains visible */
     }
 }
+
 
         .decorative {
             font-family: 'Great Vibes', cursive;
