@@ -26,34 +26,35 @@
     border: 8px solid #a586a6;
     position: relative;
     animation: fadeIn 2s ease-in-out;
-    
-    /* Improved background handling */
-    background-size: contain; /* Ensures the whole image is visible */
+
+    /* Key Background Fixes */
+    background-size: cover; /* Ensures the image scales proportionally */
     background-repeat: no-repeat;
     background-position: center;
-    background-blend-mode: lighten;
+    background-attachment: fixed; /* Keeps the image fixed during scroll */
 }
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 95%;
         padding: 20px;
         margin-top: 30px;
-        background-size: cover; /* Adjust to cover on smaller screens */
+        background-size: cover; /* Ensures the image scales properly */
     }
 }
 
 /* Adjust for even smaller screens */
 @media (max-width: 480px) {
     .container {
-        width: 95%;
+        width: 100%;
         padding: 15px;
         margin-top: 20px;
         border-width: 5px;
-        background-size: contain; /* Ensures the whole image remains visible */
+        background-size: cover; /* Keeps the background visually appealing */
     }
 }
+
 
 
         .decorative {
