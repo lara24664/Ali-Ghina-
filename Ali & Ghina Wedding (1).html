@@ -15,19 +15,45 @@
 }
 
         .container {
-            max-width: 600px;
-            margin: auto;
-            background: url(1.png);
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 15px;
-            margin-top: 50px;
-            border: 8px solid  #a586a6;
-            position: relative;
-            animation: fadeIn 2s ease-in-out;
-			background-size: cover; /* Makes sure the image fits inside the container */
-    background-blend-mode: lighten; 
-        }
+    max-width: 90%;
+    width: 600px;
+    margin: auto;
+    background: url(1.png);
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 50px;
+    border: 8px solid #a586a6;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+    background-size: cover; 
+    background-blend-mode: lighten;
+
+    /* Ensuring responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+}
+
+/* Adjust for even smaller screens */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+        margin-top: 20px;
+        border-width: 5px;
+    }
+}
+
         .decorative {
             font-family: 'Great Vibes', cursive;
             font-size: 3em;
